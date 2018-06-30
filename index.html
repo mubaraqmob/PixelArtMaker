@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jscolor.min.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+<h1><span style="color: #2EFE9A"></span>M<span style="color: #93e28e">U</span><span style="color: #e270cf">B</span>
+    <span style="color: rgb(20, 119, 218)">:</span> <span style="color: rgb(148, 201, 130)"></span>mU<span style="color: #ac84e2">B</span>
+    <span style="color: #3f1530">A</span><span style="color: #40b1ad">R</span><span style="color: #e25258">AK</span>
+    <span style="color: #0e040d">a</span><span style="color: #12d1c1">R</span><span style="color: #7ee27d">T</span>
+    <span style="color: #7a1cc2">m</span><span style="color: #3cbfe2">A</span><span style="color: #e24f5a">K</span>
+    <span style="color: #13a532">E</span><span style="color: #3a9720">R</span></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2>You May Want To Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="input_height" name="height" min="1" max="50" value="1">
+        Grid Width:
+        <input type="number" id="input_width" name="width" min="1" max="50" value="1">
+        <button id="submit" type="button" onclick="makeGrid()">Submit</button>
+        <button type="reset" onclick="backUp()">Reset</button>
+    </form>
+<div class="" id="error"></div>
+    <h2>Pick A Color</h2>
+<input type="color" id="colorPicker" value="#FFFFFF">
+
+    <h2>Design Canvas</h2>
+    <table id="pixel_canvas"> 
+    </table>
+
+    <script src="designs.js"></script>
+</body>
+</html>
